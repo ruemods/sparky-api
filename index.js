@@ -6,6 +6,6 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname+"/kop/index.html");
 })
 
-app.listen(port, () => {
+app.listen(3000, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 })
