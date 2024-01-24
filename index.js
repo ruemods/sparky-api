@@ -6,7 +6,7 @@ const lol = require('lolkil-scraper');
 app.get("/", (req, res) => {
   res.sendFile(__dirname+"/kop/index.html");
 })
-
+/*
 app.get('/downloader/youtube_dl_mp4', async (req, res, next) => {
   try {
     const apikey = req.query.apikey;
@@ -38,7 +38,7 @@ app.get('/downloader/youtube_dl_mp4', async (req, res, next) => {
     res.json(msg.error);
   }
 });
-
+*/
 app.listen(3000, () => {
   console.log(`Example app listening...`);
 })
