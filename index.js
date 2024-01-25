@@ -15,14 +15,7 @@ app.get('/search', (req, res) => {
     if (!searchTerm) {
         return res.status(400).json({ error: 'Search term is required' });
     }
-
-    ytsearch(searchTerm, (err, result) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).json({ error: 'Internal server error' });
-        }
-        res.json(result);
-    });
+        res.json(await ytsearch(searchTerm));
 });
 
 
