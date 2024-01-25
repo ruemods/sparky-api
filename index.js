@@ -149,7 +149,7 @@ msg = {
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from the 'public' directory
-
+app.set("json spaces", 4)
 /*
 app.get('/downloader/youtube_dl_mp4', async (req, res, next) => {
   try {
