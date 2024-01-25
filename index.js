@@ -197,6 +197,7 @@ app.get('/downloader/yt_video', async (req, res, next) => {
     res.json(msg.error);
   }
 });
+/*
 app.get('/search', (req, res) => {
     const searchTerm = req.query.q;
     if (!searchTerm) {
@@ -204,7 +205,7 @@ app.get('/search', (req, res) => {
     }
         res.json(await ytsearch(searchTerm));
 });
-
+*/
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
