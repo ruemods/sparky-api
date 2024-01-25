@@ -10,6 +10,7 @@
     "express": "^4.17.1",
     "ytsearch": "^1.0.0",
     "body-parser": "^1.19.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "@vercel/node": "^3.0.14"
   }
 }
