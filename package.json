@@ -1,15 +1,15 @@
 {
-  "name": "sparky-api",
+  "name": "your-project-name",
   "version": "1.0.0",
-  "description": "api",
-  "main": "index.js",
+  "description": "Description of your project",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "latest",
-    "lolkil-scraper": "github:LoliKillers/lolkil-scraper"
+    "express": "^4.17.1",
+    "ytsearch": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "path": "^0.12.7"
   }
 }
