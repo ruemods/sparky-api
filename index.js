@@ -12,9 +12,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve static files f
 
 app.get('/search', (req, res) => {
     const searchTerm = req.query.q;
-    if (!searchTerm) {
-        return res.status(400).json({ error: 'Search term is required' });
-    }
+    if (!searchTerm) return res.status(400).json({ error: 'Search term is required' });
         res.json(await ytsearch(searchTerm));
 });
 
