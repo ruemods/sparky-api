@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from the 'public' directory
-app.set("json spaces", 4)
 
 app.get('/search', (req, res) => {
     const searchTerm = req.query.q;
